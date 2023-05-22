@@ -1,2 +1,2 @@
 # ExpenseTracker
-# Simple Android app for managing finance with using jetpack compose approach
+Simple Android app for managing finance with using jetpack compose approach
