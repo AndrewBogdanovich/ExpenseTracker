@@ -20,5 +20,4 @@ annotation class PhonePreview
 annotation class TabletPreview
 
 @PhonePreview
-@TabletPreview
 annotation class DevicesPreview
