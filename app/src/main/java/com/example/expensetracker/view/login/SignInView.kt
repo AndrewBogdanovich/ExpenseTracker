@@ -23,6 +23,8 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.example.expensetracker.DevicesPreview
 import com.example.expensetracker.R
 
 @Composable
@@ -99,4 +101,11 @@ fun SigInView(navController: NavController) {
                 })
         }
     }
+}
+
+@DevicesPreview
+@Composable
+fun SignInPreview() {
+    val navController = rememberNavController()
+    SigInView(navController)
 }

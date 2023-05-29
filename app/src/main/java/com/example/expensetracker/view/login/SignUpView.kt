@@ -15,6 +15,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.example.expensetracker.DevicesPreview
 import com.example.expensetracker.R
 
 @Composable
@@ -73,4 +75,11 @@ fun SignUpView(navController: NavController) {
             Text(text = "Sign up")
         }
     }
+}
+
+@DevicesPreview
+@Composable
+fun SignUpPreview() {
+    val navController = rememberNavController()
+    SignUpView(navController)
 }

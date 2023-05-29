@@ -13,6 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.example.expensetracker.DevicesPreview
 
 @Composable
 fun ForgotPasswordView(navController: NavController) {
@@ -29,4 +31,11 @@ fun ForgotPasswordView(navController: NavController) {
             Text(text = "Send recovery code")
         }
     }
+}
+
+@DevicesPreview
+@Composable
+fun ForgotPasswordPreview() {
+    val navController = rememberNavController()
+    ForgotPasswordView(navController)
 }
