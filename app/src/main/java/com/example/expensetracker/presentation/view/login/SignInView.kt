@@ -1,4 +1,4 @@
-package com.example.expensetracker.view.login
+package com.example.expensetracker.presentation.view.login
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.expensetracker.DevicesPreview
+import com.example.expensetracker.presentation.DevicesPreview
 import com.example.expensetracker.R
 
 @Composable
@@ -66,7 +66,7 @@ fun SigInView(navController: NavController) {
         ) {
             RadioButton(selected = true, onClick = { /*TODO*/ })
             Text(text = "Remember me", modifier = Modifier.padding(end = 10.dp))
-            Button(onClick = { /*TODO*/ }, shape = RoundedCornerShape(size = 6.dp)) {
+            Button(onClick = { navController.navigate("achievementsListView") }, shape = RoundedCornerShape(size = 6.dp)) {
                 Text(text = "Login")
                 Icon(
                     painter = painterResource(id = R.drawable.baseline_login_24),

@@ -1,4 +1,4 @@
-package com.example.expensetracker.view.login
+package com.example.expensetracker.presentation.view.login
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.expensetracker.DevicesPreview
+import com.example.expensetracker.presentation.DevicesPreview
 import com.example.expensetracker.R
 
 @Composable

@@ -1,4 +1,4 @@
-package com.example.expensetracker
+package com.example.expensetracker.presentation
 
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview

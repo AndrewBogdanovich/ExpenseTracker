@@ -1,4 +1,4 @@
-package com.example.expensetracker
+package com.example.expensetracker.presentation
 
 import android.os.Bundle
 import android.widget.Toast
@@ -9,11 +9,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.example.expensetracker.ui.theme.ExpenseTrackerTheme
-import com.example.expensetracker.view.login.ForgotPasswordView
-import com.example.expensetracker.view.login.SigInView
-import com.example.expensetracker.view.login.SignUpView
-import com.example.expensetracker.view.StartupNavigationView
+import com.example.expensetracker.presentation.ui.theme.ExpenseTrackerTheme
+import com.example.expensetracker.presentation.view.login.ForgotPasswordView
+import com.example.expensetracker.presentation.view.login.SigInView
+import com.example.expensetracker.presentation.view.login.SignUpView
+import com.example.expensetracker.presentation.view.StartupNavigationView
+import com.example.expensetracker.presentation.view.achivement.AchievementListView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
